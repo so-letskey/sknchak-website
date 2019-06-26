@@ -31,32 +31,32 @@
 }
 )();
 
-(function timer() {
-  var countDownDate = new Date("June 9, 2019, 23:59:59").getTime();
+// (function timer() {
+//   var countDownDate = new Date("June 9, 2019, 23:59:59").getTime();
 
-  function updateTimer() {
-    var now = new Date().getTime();
+//   function updateTimer() {
+//     var now = new Date().getTime();
 
-    var distance = countDownDate - now;
+//     var distance = countDownDate - now;
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     var hours = Math.floor(
+//       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+//     );
+//     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("demo").innerHTML =
-      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+//     document.getElementById("demo").innerHTML =
+//       days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "Zapisy skończone";
-    }
-  }
-  updateTimer();
-  var x = setInterval(updateTimer, 1000);
-})();
+//     if (distance < 0) {
+//       clearInterval(x);
+//       document.getElementById("demo").innerHTML = "Zapisy skończone";
+//     }
+//   }
+//   updateTimer();
+//   var x = setInterval(updateTimer, 1000);
+// })();
 
 // Accordion function
 
